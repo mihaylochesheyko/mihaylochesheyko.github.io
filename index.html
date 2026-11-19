@@ -6,7 +6,6 @@
         <meta name="description" content="IT Portfolio von Mihaylo Chesheyko" />
         <meta name="author" content="Mihaylo Chesheyko" />
         <title>Mihaylo Chesheyko - IT Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -81,6 +80,19 @@
             }
             .experience-body .subheading {
                 margin-bottom: 0.75rem;
+            }
+            .screenshot video,
+            .screenshot img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+            }
+            .screenshot figcaption {
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                color: #6c757d;
             }
             .tutorial-link {
                 display: inline-block;
@@ -182,9 +194,15 @@
                         Herzlich willkommen auf meiner kleinen Portfolio-Webseite. Mein Name ist Mihaylo Chesheyko, ich bin 15 Jahre alt und besuche die Sekundarschule Reutenen.
                         Ich interessiere mich sehr für die IT und möchte in Zukunft im Bereich Cybersecurity arbeiten.
                     </p>
-                    <div class="subheading mb-3">Wofür habe ich diese Webseite erstellt?</div>
+                    <p class="lead mb-5">
+                        Zurzeit suche ich eine Lehrstelle als ICT-Fachmann.
+                    </p>
+                    <div class="subheading mb-3">Warum dieser Beruf?</div>
+                    <p class="lead mb-3">
+                        Ich habe grosses Interesse an Geräten, Servern, Programmieren und Linux, wie Sie weiter unten unter «Erfahrung» sehen können.
+                    </p>
                     <p class="lead mb-0">
-                        Diese Webseite wurde erstellt, um meine ersten persönlichen Erfahrungen in der IT zu zeigen.
+                        Ausserdem habe ich gerne Kontakt mit Menschen und arbeite gerne im Team.
                     </p>
                 </div>
             </section>
@@ -201,23 +219,45 @@
                         </div>
                         <div class="experience-body">
                             <h3>Obsidian</h3>
-                            <div class="subheading">Notizen & Wissensmanagement</div>
-                            <p class="mb-0">
+                            <div class="subheading">Notizen &amp; Wissensmanagement</div>
+                            <p class="mb-2">
                                 Meine erste Erfahrung mit einem Programm war Obsidian – eine Software, mit der man Gedanken und Informationen sehr frei und unterschiedlich strukturieren kann.
-                                Ich nutze es unter anderem für tägliche Notizen (Daily Notes). Durch die vielen Community-Plugins lassen sich damit sehr unterschiedliche Dinge umsetzen,
-                                und ich musste mich intensiv mit der Formatierungssprache Markdown auseinandersetzen, da in Obsidian alles im .md-Format gespeichert wird.
+                                Durch die vielen Community-Plugins lassen sich damit sehr unterschiedliche Dinge umsetzen, und ich musste mich intensiv mit der Formatierungssprache Markdown auseinandersetzen, da in Obsidian alles im .md-Format gespeichert wird.
+                            </p>
+                            <p class="mb-0">
+                                Ich nutze Obsidian für tägliche Notizen (Daily Notes) und häufig das Community-Plugin Canvas, um Gedanken und unterschiedliche Themen zu strukturieren.
+                                In Kombination mit Wikilinks lassen sich damit gut IT-Informationen speichern.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Taschenrechner mit Python -->
+                    <!-- Linux -->
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <img src="assets/img/linux-tux.png" alt="Linux Tux Logo" />
+                        </div>
+                        <div class="experience-body">
+                            <h3>Linux</h3>
+                            <div class="subheading">Fedora Workstation</div>
+                            <p class="mb-0">
+                                Seit einiger Zeit nutze ich die Linux-Distribution Fedora als mein Hauptbetriebssystem.
+                                In dieser Zeit habe ich gelernt, wie man grundlegend mit Bash arbeitet und wie man den Paketmanager von Fedora benutzt.
+                            </p>
+                            <figure class="screenshot mt-3 mb-0">
+                                <img src="assets/img/fastfetch.png" alt="Terminal-Ausgabe von fastfetch mit Fedora Linux 44 und GNOME auf einem ThinkPad T14s" loading="lazy" />
+                                <figcaption>Mein Fedora-System, angezeigt mit <code>fastfetch</code></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
                     <div class="experience-item">
                         <div class="experience-icon">
                             <i class="fab fa-python" style="font-size: 2.5rem; color: #4B8BBE;"></i>
                         </div>
                         <div class="experience-body">
-                            <h3>Taschenrechner mit Python</h3>
-                            <div class="subheading">Python · Tkinter</div>
+                            <h3>Python</h3>
+                            <div class="subheading">Tkinter &amp; VSCodium</div>
                             <p class="mb-2">
                                 Ich habe mit der Programmiersprache Python und der Bibliothek Tkinter einen funktionsfähigen Taschenrechner mit grafischer Oberfläche erstellt.
                                 Die Grundstruktur stammt aus einem Tutorial, die Wurzelfunktion (√) habe ich selbst programmiert und zusätzlich die Farben angepasst.
@@ -381,22 +421,18 @@ window.geometry(f"{window_width}x{window_height}+{window_x}+{window_y}")
 # 7. App starten
 window.mainloop()</code></pre>
                             </details>
-                        </div>
-                    </div>
-
-                    <!-- Arbeit mit Linux -->
-                    <div class="experience-item">
-                        <div class="experience-icon">
-                            <img src="assets/img/linux-tux.png" alt="Linux Tux Logo" />
-                        </div>
-                        <div class="experience-body">
-                            <h3>Arbeit mit Linux</h3>
-                            <div class="subheading">Ubuntu · Fedora Workstation</div>
-                            <p class="mb-0">
-                                Da das Betriebssystem Linux für die Informatik sehr wichtig ist und es mich gereizt hat, etwas Neues zu lernen, habe ich zuerst Ubuntu ausprobiert –
-                                das hat mir aber nicht so gut gefallen. Vor Kurzem habe ich Fedora als virtuelle Maschine installiert und einige Befehle ausprobiert.
-                                Es hat mir sehr gut gefallen, und ich möchte es in Zukunft vollständig nutzen.
+                            <p class="mt-4 mb-0">
+                                Ausserdem lerne ich jetzt aktiv die Grundlagen von Python. Zurzeit beschäftige ich mich mit Variablen und Datentypen.
+                                Dafür nutze ich VSCodium, die Open-Source-Alternative zu VSCode.
+                                Was ich gelernt habe, speichere ich in Obsidian, um es später wieder anzuschauen.
                             </p>
+                            <figure class="screenshot mt-3 mb-0">
+                                <video controls preload="metadata" poster="assets/video/python-lektion-poster.jpg" width="100%">
+                                    <source src="assets/video/python-lektion.mp4" type="video/mp4" />
+                                    Dein Browser kann dieses Video leider nicht abspielen.
+                                </video>
+                                <figcaption>Meine erste Python-Lernnotiz in Obsidian (Markdown-Quelltext und fertige Ansicht)</figcaption>
+                            </figure>
                         </div>
                     </div>
 
